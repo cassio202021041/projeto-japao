@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Paleta Light (clara) */
+  --background: #f7f8fc;
+  --foreground: #232323;
+
+  --primary: #7b67e6;
+  --accent: #2dd3ed;
+  --highlight: #ff6b9a;
+
+  --border: #e6e8ef;
+
+  --text-main: #232323;
+  --text-muted: #a0a0a0;
+
+  --error: #e63946;
+  --alert: #f9a825;
+  --success: #43a047;
+
+  --font-sans: 'Geist', Arial, Helvetica, sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+  --background: #f7f8fc;
+  --foreground: #232323;
+
+    --primary: #a89cfc;
+    --accent: #44f2f7;
+    --highlight: #ff92b9;
+
+    --border: #393649;
+
+    --text-main: #ededed;
+    --text-muted: #888ca5;
+
+    --error: #f66a7b;
+    --alert: #ffd54f;
+    --success: #65d285;
+  }
+}
+
+/* Remova o bloco @theme inline, pois não é CSS padrão e causa o erro */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+}
