@@ -1,4 +1,4 @@
 export default function AprendizadoHiragana
 () {
-  return <h1>Página de Aprendizado de Hiragana</h1>;
+  return <h3>Página de Aprendizado de Hiragana</h3>;
 }
