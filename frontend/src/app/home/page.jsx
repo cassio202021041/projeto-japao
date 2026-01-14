@@ -1,6 +1,6 @@
 import Headers from "@/components/header";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
     
@@ -9,34 +9,23 @@ export default function Home() {
       {/* Card */}
       <div className="w-[420px] max-w-full rounded-3xl bg-white dark:bg-gray-900 shadow-xl p-8 text-center transition-colors">
         
-        {/* Tabs */}
-        <div className="flex justify-center gap-8 text-gray-500 dark:text-gray-400 font-medium mb-8">
-          <span className="relative text-gray-900 dark:text-white">
-            Início
-            <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-purple-500 rounded-full" />
-          </span>
-          <span>Aprendizado</span>
-          <span>Exercícios</span>
-        </div>
-
+       
+        
         {/* Mascote */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center">
           <div className="relative">
             <img
               src="/assets/logo/logo.svg"
               alt="Raposa"
-              className="w-32 h-32 mx-auto"
-            />
-            {/* Hiragana あ */}
-            <span className="absolute -right-6 top-1/2 -translate-y-1/2 text-6xl font-bold text-black dark:text-white">
-              あ
-            </span>
+              className="w-10 h-10 mx-auto"
+            />           
+           
           </div>
         </div>
 
         {/* Título */}
         <h1 className="text-3xl font-extrabold mb-6">
-          Hiragana <span className="text-pink-500">&lt;Flow&gt;</span>
+          Hiragana Flow
         </h1>
 
         {/* Botão */}
