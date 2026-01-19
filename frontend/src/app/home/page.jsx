@@ -1,25 +1,19 @@
+import ButtonRoxo from "@/components/button/button";
 import Headers from "@/components/header";
 
 export default function HomePage() {
   return (
-    <>
-    
-    <Headers />
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-950 transition-colors">
+    <div className="min-h-screen flex items-center justify-center bg-background bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-950 transition-colors">
       {/* Card */}
       <div className="w-[420px] max-w-full rounded-3xl bg-white dark:bg-gray-900 shadow-xl p-8 text-center transition-colors">
-        
-       
-        
         {/* Mascote */}
         <div className="flex justify-center">
           <div className="relative">
             <img
               src="/assets/logo/logo.svg"
               alt="Raposa"
-              className="w-10 h-10 mx-auto"
+              className="w-50 h-50 mx-auto"
             />           
-           
           </div>
         </div>
 
@@ -29,11 +23,9 @@ export default function HomePage() {
         </h1>
 
         {/* Botão */}
-        <button className="w-full py-4 rounded-full text-white text-lg font-semibold 
-          bg-gradient-to-r from-indigo-500 to-purple-500 
-          hover:opacity-90 transition mb-4">
-          Continuar de onde parei
-        </button>
+        <ButtonRoxo>
+          Continuar Aprendizado
+        </ButtonRoxo>
 
         {/* Progresso */}
         <p className="text-sm text-gray-500 dark:text-gray-300 mb-2">
@@ -45,8 +37,6 @@ export default function HomePage() {
         </div>
       </div>
     </div>
-     </>
-
   );
    
 }
